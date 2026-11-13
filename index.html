@@ -128,7 +128,7 @@
     }]
     </script>
 
-    <style>
+        <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
@@ -152,7 +152,10 @@
         }
         .skip:focus { top: 0; }
 
-           padding: 6px 0;
+        .site-header {
+            background: rgba(10, 22, 40, 0.85);
+            backdrop-filter: blur(20px);
+            padding: 6px 0; /* ИЗМЕНЕНО: было 12px */
             border-bottom: 1px solid rgba(26, 48, 80, 0.5);
             position: sticky; top: 0; z-index: 100;
             box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
@@ -167,7 +170,7 @@
             display: flex; align-items: center; gap: 12px;
             font-size: 22px; font-weight: 800; color: #ffffff;
         }
-        .brand img { height: 32px; width: auto; display: block; }
+        .brand img { height: 32px; width: auto; display: block; } /* ИЗМЕНЕНО: было 44px */
 
         .menu-button {
             display: none; background: none; border: 1px solid #1a3050;
@@ -176,11 +179,12 @@
         }
 
         .main-nav { display: flex; align-items: center; gap: 10px 20px; flex-wrap: wrap; }
-        .main-nav a { color: #8aaac8; font-weight: 500; font-size: 14px; transition: 0.3s; }
+        .main-nav a { color: #8aaac8; font-weight: 500; font-size: 14px; transition: 0.3s; } /* ИЗМЕНЕНО: было 15px */
         .main-nav a:hover { color: #4ab8ff; text-shadow: 0 0 20px rgba(74, 184, 255, 0.15); }
         .main-nav a.active { color: #4ab8ff; border-bottom: 2px solid #4ab8ff; }
 
         .header-actions { display: flex; align-items: center; gap: 12px; }
+        .header-actions .btn { padding: 6px 16px; font-size: 13px; } /* ДОБАВЛЕНО */
 
         .age-badge {
             background: #1a3050; padding: 4px 12px; border-radius: 20px;
